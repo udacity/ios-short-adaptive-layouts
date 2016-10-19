@@ -1,0 +1,14 @@
+/* Class = "UILabel"; text = "Season"; ObjectID = "11R-Kp-08R"; */
+"11R-Kp-08R.text" = "موسم";
+
+/* Class = "UIButton"; normalTitle = "Winter"; ObjectID = "2vP-Im-kpY"; */
+"2vP-Im-kpY.normalTitle" = "الشتاء";
+
+/* Class = "UIButton"; normalTitle = "Fall"; ObjectID = "9rw-Pd-XDW"; */
+"9rw-Pd-XDW.normalTitle" = "الخريف";
+
+/* Class = "UIButton"; normalTitle = "Spring"; ObjectID = "Ykh-yg-SgV"; */
+"Ykh-yg-SgV.normalTitle" = "الربيع";
+
+/* Class = "UIButton"; normalTitle = "Summer"; ObjectID = "jAQ-4A-ofO"; */
+"jAQ-4A-ofO.normalTitle" = "الصيف";

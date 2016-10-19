@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gUK-0Q-gxu">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cloth View Controller-->
+        <scene sceneID="o6W-3J-a3c">
+            <objects>
+                <viewController id="gUK-0Q-gxu" customClass="ClothViewController" customModule="AdaptiveLayouts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jtr-Fy-hVN"/>
+                        <viewControllerLayoutGuide type="bottom" id="SDt-Gs-Be7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" id="6re-ba-hqF">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fHX-xe-kfg">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dcT-Ji-sfp">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clothe" translatesAutoresizingMaskIntoConstraints="NO" id="TCX-3h-8kW">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="7hA-9z-nLD">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="256"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="128" id="Gkx-Gj-iZD">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="256"/>
+                                                    </constraint>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RK1-nB-mOf">
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Cloth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoE-Ly-frc">
+                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="31"/>
+                                                        <color key="textColor" red="1" green="0.3890668493596251" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="66"/>
+                                                        </variation>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Like it? Wear it." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6r-PR-f7h">
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" red="1" green="0.38906684940000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <variation key="default">
+                                                    <mask key="subviews">
+                                                        <exclude reference="p6r-PR-f7h"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact" alignment="center">
+                                                    <mask key="subviews">
+                                                        <include reference="p6r-PR-f7h"/>
+                                                    </mask>
+                                                </variation>
+                                            </stackView>
+                                        </subviews>
+                                        <variation key="heightClass=compact" alignment="fill" axis="vertical" spacing="2"/>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="50"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="b8b-AA-djd">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7w-9d-Zvd">
+                                                <color key="backgroundColor" red="1" green="0.38906684940000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="12"/>
+                                                <state key="normal" title="Sign Up">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRm-Ew-3Ou">
+                                                <color key="backgroundColor" red="1" green="0.38906684940000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="12"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <variation key="heightClass=compact" alignment="fill" axis="vertical" spacing="40"/>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact" alignment="center" axis="horizontal" distribution="fill" spacing="60"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fHX-xe-kfg" firstAttribute="leading" secondItem="6re-ba-hqF" secondAttribute="leading" constant="24" id="4GD-at-IJP"/>
+                            <constraint firstAttribute="bottom" secondItem="fHX-xe-kfg" secondAttribute="bottom" constant="20" id="BDc-3V-yjY"/>
+                            <constraint firstItem="fHX-xe-kfg" firstAttribute="top" secondItem="jtr-Fy-hVN" secondAttribute="bottom" constant="10" id="IrC-Yf-3OX"/>
+                            <constraint firstAttribute="trailing" secondItem="fHX-xe-kfg" secondAttribute="trailing" constant="24" id="bhq-Ue-Ey7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelStackView" destination="RK1-nB-mOf" id="MMY-83-v9j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ext-NA-ANy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-354" y="37"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clothe" width="128" height="128"/>
+    </resources>
+</document>

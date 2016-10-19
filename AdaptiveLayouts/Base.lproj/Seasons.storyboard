@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="orG-Gy-ZNr">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Seasons Page View Controller-->
+        <scene sceneID="Ica-kU-Ha4">
+            <objects>
+                <pageViewController storyboardIdentifier="seasonsPortraitPageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="JBL-df-Hyp" customClass="SeasonsPageViewController" customModule="AdaptiveLayouts" customModuleProvider="target" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="500" height="800"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k9O-4H-pY6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1056" y="-896"/>
+        </scene>
+        <!--Seasons Portrait View Controller-->
+        <scene sceneID="8vs-cO-ae0">
+            <objects>
+                <viewController storyboardIdentifier="seasonsPortrait" id="yt1-Zk-vdJ" customClass="SeasonsPortraitViewController" customModule="AdaptiveLayouts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xX3-2O-3C4"/>
+                        <viewControllerLayoutGuide type="bottom" id="nVL-i7-b8w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xHS-Fk-gcG">
+                        <rect key="frame" x="0.0" y="0.0" width="500" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wSH-83-JC3">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globe" translatesAutoresizingMaskIntoConstraints="NO" id="dfs-p8-fV5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Season" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11R-Kp-08R">
+                                        <color key="backgroundColor" red="0.23431243190000001" green="0.48902466020000002" blue="0.89411765340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="oxw-zc-MMQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Pj-fG-qMA">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="wSH-83-JC3" secondAttribute="bottom" id="Kqk-Tc-San"/>
+                            <constraint firstItem="wSH-83-JC3" firstAttribute="top" secondItem="xHS-Fk-gcG" secondAttribute="topMargin" id="S7t-sl-8Tk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wSH-83-JC3" secondAttribute="trailing" id="fEa-t2-dwL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="wSH-83-JC3" secondAttribute="leading" id="n8D-eX-NeY"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="500" height="800"/>
+                    <connections>
+                        <outlet property="seasonLabel" destination="11R-Kp-08R" id="hRj-l0-hi1"/>
+                        <outlet property="seasonTextView" destination="9Pj-fG-qMA" id="9Xl-iR-aDB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ix9-H4-9cm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1602" y="-896"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dHC-uS-vHz">
+            <objects>
+                <viewController id="orG-Gy-ZNr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ega-uP-qgM"/>
+                        <viewControllerLayoutGuide type="bottom" id="N51-uZ-wWI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cdJ-nJ-60o">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="My3-kx-7EZ">
+                                <connections>
+                                    <segue destination="cd6-ih-Yof" kind="embed" id="guy-z3-rTl"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N51-uZ-wWI" firstAttribute="top" secondItem="My3-kx-7EZ" secondAttribute="bottom" constant="20" id="Lbb-kN-6qe"/>
+                            <constraint firstItem="My3-kx-7EZ" firstAttribute="leading" secondItem="cdJ-nJ-60o" secondAttribute="leadingMargin" id="NDd-Y5-gtD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="My3-kx-7EZ" secondAttribute="trailing" id="Ovu-3S-crc"/>
+                            <constraint firstItem="My3-kx-7EZ" firstAttribute="top" secondItem="Ega-uP-qgM" secondAttribute="bottom" constant="20" id="qt4-Vv-wBY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U3U-eX-SHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439" y="-1713"/>
+        </scene>
+        <!--Seasons Landscape View Controller-->
+        <scene sceneID="cyL-1h-wYW">
+            <objects>
+                <viewController storyboardIdentifier="seasonsLandscapeVC" id="leB-gY-Iaz" customClass="SeasonsLandscapeViewController" customModule="AdaptiveLayouts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1yV-db-a0j"/>
+                        <viewControllerLayoutGuide type="bottom" id="ucY-Lp-DvZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BBN-Hj-jzV">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DjN-Fk-AnW">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="xvp-3Z-jEX">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="globe" translatesAutoresizingMaskIntoConstraints="NO" id="avB-Y1-Kct"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eqN-jF-lgg">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ykh-yg-SgV">
+                                                        <color key="backgroundColor" red="0.23431243190000001" green="0.48902466020000002" blue="0.89411765340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <state key="normal" title="Spring">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jAQ-4A-ofO">
+                                                        <color key="backgroundColor" red="0.23431243190000001" green="0.48902466020000002" blue="0.89411765340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <state key="normal" title="Summer">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aT2-Uu-y1E">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rw-Pd-XDW">
+                                                        <color key="backgroundColor" red="0.23431243190000001" green="0.48902466020000002" blue="0.89411765340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <state key="normal" title="Fall">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vP-Im-kpY">
+                                                        <color key="backgroundColor" red="0.23431243190000001" green="0.48902466020000002" blue="0.89411765340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <state key="normal" title="Winter">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MRB-ey-dwj">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="DjN-Fk-AnW" secondAttribute="trailing" id="9N2-Jt-llP"/>
+                            <constraint firstItem="DjN-Fk-AnW" firstAttribute="top" secondItem="BBN-Hj-jzV" secondAttribute="topMargin" id="XGB-Gy-Z9L"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="DjN-Fk-AnW" secondAttribute="bottom" id="nwV-GT-DiU"/>
+                            <constraint firstItem="DjN-Fk-AnW" firstAttribute="leading" secondItem="BBN-Hj-jzV" secondAttribute="leadingMargin" id="waV-Dx-hu4"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="800" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jrY-FE-abu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="306" y="-896"/>
+        </scene>
+        <!--Seasons Container View Controller-->
+        <scene sceneID="goc-jP-2Ev">
+            <objects>
+                <viewController id="cd6-ih-Yof" customClass="SeasonsContainerViewController" customModule="AdaptiveLayouts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gDn-Ci-W35"/>
+                        <viewControllerLayoutGuide type="bottom" id="9kB-Um-YsH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KoE-j5-WMD">
+                        <rect key="frame" x="0.0" y="0.0" width="627" height="315"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qds-Dv-Gkc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439" y="-910"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="globe" width="160" height="160"/>
+    </resources>
+</document>
