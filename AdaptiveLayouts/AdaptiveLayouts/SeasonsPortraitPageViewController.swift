@@ -1,5 +1,5 @@
 //
-//  SeasonsPageViewController.swift
+//  SeasonsPortraitPageViewController.swift
 //  AdaptiveLayouts
 //
 //  Created by Jarrod Parkes on 10/19/16.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-// MARK: - SeasonsPageViewController: UIPageViewController
+// MARK: - SeasonsPortraitPageViewController: UIPageViewController
 
-class SeasonsPageViewController: UIPageViewController {
+class SeasonsPortraitPageViewController: UIPageViewController {
     
     // MARK: Properties
     
@@ -35,14 +35,14 @@ class SeasonsPageViewController: UIPageViewController {
     
     func createSeasonsPortraitViewController() -> UIViewController {
         let storyboard = UIStoryboard(name: "Seasons", bundle: nil)
-        let newSeasonsPortraitViewController = storyboard.instantiateViewController(withIdentifier: "seasonsPortrait")
+        let newSeasonsPortraitViewController = storyboard.instantiateViewController(withIdentifier: "seasonsPortraitVC")
         return newSeasonsPortraitViewController
     }
 }
 
-// MARK: - SeasonsPageViewController: UIPageViewControllerDataSource
+// MARK: - SeasonsPortraitPageViewController: UIPageViewControllerDataSource
 
-extension SeasonsPageViewController: UIPageViewControllerDataSource {
+extension SeasonsPortraitPageViewController: UIPageViewControllerDataSource {
     
     // MARK: Moving Between Pages
     

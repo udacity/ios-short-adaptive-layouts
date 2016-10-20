@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Seasons Page View Controller-->
+        <!--Seasons Portrait Page View Controller-->
         <scene sceneID="Ica-kU-Ha4">
             <objects>
-                <pageViewController storyboardIdentifier="seasonsPortraitPageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="JBL-df-Hyp" customClass="SeasonsPageViewController" customModule="AdaptiveLayouts" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="seasonsPortraitPageVC" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="JBL-df-Hyp" customClass="SeasonsPortraitPageViewController" customModule="AdaptiveLayouts" customModuleProvider="target" sceneMemberID="viewController">
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="500" height="800"/>
                 </pageViewController>
@@ -21,7 +21,7 @@
         <!--Seasons Portrait View Controller-->
         <scene sceneID="8vs-cO-ae0">
             <objects>
-                <viewController storyboardIdentifier="seasonsPortrait" id="yt1-Zk-vdJ" customClass="SeasonsPortraitViewController" customModule="AdaptiveLayouts" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="seasonsPortraitVC" id="yt1-Zk-vdJ" customClass="SeasonsPortraitViewController" customModule="AdaptiveLayouts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xX3-2O-3C4"/>
                         <viewControllerLayoutGuide type="bottom" id="nVL-i7-b8w"/>
@@ -68,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ix9-H4-9cm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1602" y="-896"/>
+            <point key="canvasLocation" x="-2176" y="-897"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dHC-uS-vHz">
@@ -79,7 +79,7 @@
                         <viewControllerLayoutGuide type="bottom" id="N51-uZ-wWI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cdJ-nJ-60o">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="My3-kx-7EZ">
@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U3U-eX-SHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-439" y="-1713"/>
+            <point key="canvasLocation" x="-207" y="-1705"/>
         </scene>
         <!--Seasons Landscape View Controller-->
         <scene sceneID="cyL-1h-wYW">
@@ -178,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jrY-FE-abu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="306" y="-896"/>
+            <point key="canvasLocation" x="997" y="-1004"/>
         </scene>
         <!--Seasons Container View Controller-->
         <scene sceneID="goc-jP-2Ev">
@@ -189,14 +189,14 @@
                         <viewControllerLayoutGuide type="bottom" id="9kB-Um-YsH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KoE-j5-WMD">
-                        <rect key="frame" x="0.0" y="0.0" width="627" height="315"/>
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="607"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qds-Dv-Gkc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-439" y="-910"/>
+            <point key="canvasLocation" x="-207" y="-912"/>
         </scene>
     </scenes>
     <resources>

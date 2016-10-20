@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Traffic View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TrafficViewController" customModule="AdaptiveLayouts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aJ3-70-WmS">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Traffic Signal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0X-fM-iwh">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Mxa-RS-8kq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oIr-UU-ziU">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="stop" translatesAutoresizingMaskIntoConstraints="NO" id="J9z-Ye-x4M">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="200" id="bTw-S9-6cy">
+                                                        <variation key="heightClass=compact" constant="125"/>
+                                                    </constraint>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="yield" translatesAutoresizingMaskIntoConstraints="NO" id="cBz-ES-kFy"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="go" translatesAutoresizingMaskIntoConstraints="NO" id="Qmd-9A-OM2"/>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cBz-ES-kFy" firstAttribute="width" secondItem="J9z-Ye-x4M" secondAttribute="width" id="Ijy-n3-jAW"/>
+                                            <constraint firstItem="Qmd-9A-OM2" firstAttribute="width" secondItem="J9z-Ye-x4M" secondAttribute="width" id="lw5-Ea-buQ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aJ3-70-WmS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2ZD-JM-vdn"/>
+                            <constraint firstItem="aJ3-70-WmS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="BZc-XE-Y5e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aJ3-70-WmS" secondAttribute="trailing" id="jMF-Gr-fT3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aJ3-70-WmS" secondAttribute="bottom" constant="40" id="lfF-sE-deW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainLabel" destination="y0X-fM-iwh" id="l86-la-nYa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="go" width="166" height="166"/>
+        <image name="stop" width="166" height="166"/>
+        <image name="yield" width="166" height="166"/>
+    </resources>
+</document>

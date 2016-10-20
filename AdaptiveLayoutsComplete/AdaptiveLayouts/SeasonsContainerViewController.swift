@@ -17,7 +17,6 @@ class SeasonsContainerViewController: UIViewController {
     // MARK: Properties
     
     var currentSeasonViewController: UIViewController? = nil
-    var seasonViewControllers: [UIViewController?] = [nil, nil]
     
     // MARK: Life Cycle
     

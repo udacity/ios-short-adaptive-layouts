@@ -10,7 +10,7 @@
 		A93FCF301DB43E90008EDA54 /* Cloth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A93FCF321DB43E90008EDA54 /* Cloth.storyboard */; };
 		A94AD3741DB55FCF00A081AF /* Seasons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94AD3721DB55FCF00A081AF /* Seasons.storyboard */; };
 		A98F8B6F1DB7F7550093E6C4 /* SeasonsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8B6E1DB7F7550093E6C4 /* SeasonsContainerViewController.swift */; };
-		A98F8B711DB7F7660093E6C4 /* SeasonsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8B701DB7F7660093E6C4 /* SeasonsPageViewController.swift */; };
+		A98F8B711DB7F7660093E6C4 /* SeasonsPortraitPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8B701DB7F7660093E6C4 /* SeasonsPortraitPageViewController.swift */; };
 		A98F8B731DB7F7720093E6C4 /* SeasonsLandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8B721DB7F7720093E6C4 /* SeasonsLandscapeViewController.swift */; };
 		A98F8B751DB80CA70093E6C4 /* SeasonsPortraitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98F8B741DB80CA70093E6C4 /* SeasonsPortraitViewController.swift */; };
 		A99308591DB465BE00E9208D /* ClothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99308581DB465BE00E9208D /* ClothViewController.swift */; };
@@ -27,7 +27,7 @@
 		A9782EE11DB7D8F900E654DE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Traffic.strings; sourceTree = "<group>"; };
 		A9782EE31DB7E1B500E654DE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Cloth.strings; sourceTree = "<group>"; };
 		A98F8B6E1DB7F7550093E6C4 /* SeasonsContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonsContainerViewController.swift; sourceTree = "<group>"; };
-		A98F8B701DB7F7660093E6C4 /* SeasonsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonsPageViewController.swift; sourceTree = "<group>"; };
+		A98F8B701DB7F7660093E6C4 /* SeasonsPortraitPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonsPortraitPageViewController.swift; sourceTree = "<group>"; };
 		A98F8B721DB7F7720093E6C4 /* SeasonsLandscapeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonsLandscapeViewController.swift; sourceTree = "<group>"; };
 		A98F8B741DB80CA70093E6C4 /* SeasonsPortraitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeasonsPortraitViewController.swift; sourceTree = "<group>"; };
 		A98F8B771DB81C840093E6C4 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Seasons.strings; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 				A9D0172F1DB4044000B05D75 /* TrafficViewController.swift */,
 				A99308581DB465BE00E9208D /* ClothViewController.swift */,
 				A98F8B6E1DB7F7550093E6C4 /* SeasonsContainerViewController.swift */,
-				A98F8B701DB7F7660093E6C4 /* SeasonsPageViewController.swift */,
+				A98F8B701DB7F7660093E6C4 /* SeasonsPortraitPageViewController.swift */,
 				A98F8B741DB80CA70093E6C4 /* SeasonsPortraitViewController.swift */,
 				A98F8B721DB7F7720093E6C4 /* SeasonsLandscapeViewController.swift */,
 				A94AD3701DB54EDD00A081AF /* Assets */,
@@ -181,7 +181,7 @@
 			files = (
 				A9D017301DB4044000B05D75 /* TrafficViewController.swift in Sources */,
 				A98F8B731DB7F7720093E6C4 /* SeasonsLandscapeViewController.swift in Sources */,
-				A98F8B711DB7F7660093E6C4 /* SeasonsPageViewController.swift in Sources */,
+				A98F8B711DB7F7660093E6C4 /* SeasonsPortraitPageViewController.swift in Sources */,
 				A98F8B6F1DB7F7550093E6C4 /* SeasonsContainerViewController.swift in Sources */,
 				A9D0172E1DB4044000B05D75 /* AppDelegate.swift in Sources */,
 				A98F8B751DB80CA70093E6C4 /* SeasonsPortraitViewController.swift in Sources */,
